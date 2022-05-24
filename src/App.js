@@ -1,3 +1,5 @@
+import React, { Component }  from 'react';
+
 import { useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import './styles.css'
