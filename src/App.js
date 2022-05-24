@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import './styles.css'
@@ -8,8 +9,9 @@ function App() {
   const [cep, setCep] = useState({})
 
   async function handleSearch() {
-    if (input === '') {
+    if (input === '' || setCep.cep === '') {
       alert('Preencha algum cep!')
+      alert(cep.cep)
       return
     }
 
@@ -33,12 +35,14 @@ function App() {
           placeholder="Digite seu CEP"
           value={input}
           onChange={e => setInput(e.target.value)}
+          maxlength="8"
         ></input>
 
         <button className="buttonSearch" onClick={handleSearch}>
           <FiSearch size={25} color="#fff"></FiSearch>
         </button>
       </div>
+      <p className="avisoNumeros">Apenas Números</p>
 
       {Object.keys(cep).length > 0 && (
         <main className="main">

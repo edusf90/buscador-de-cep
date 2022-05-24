@@ -77,6 +77,13 @@
   font-weight: bold;
 }
 
+.avisoNumeros{
+  color: rgba(255,255,255,0.3);
+  margin-top: -25px;
+  margin-bottom: 20px;
+  justify-content: right;
+}
+
 @media (max-width: 620px) {
   .title{
     font-size: 60px;
