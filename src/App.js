@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 import React from 'react'
-=======
-import React, { Component }  from 'react';
-
->>>>>>> 10916dcc8f662ca9a4704ebaa7914b7e57f1975a
 import { useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import './styles.css'
